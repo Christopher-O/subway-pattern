@@ -52,7 +52,7 @@
 .provisional {
 
 	/*** GC Subway mobile first styles ***/
-	&.gc-subway {
+	&.gc-subway-cra {
 		border-radius: 0px 6px 6px 0px;
 		border-right: 4px solid #26374a;
 		border-top: 4px solid #26374a;
@@ -117,8 +117,8 @@
 	}
 
 	/* Double H1 */
-	&.gc-subway h1,
-	&.gc-subway-section .gc-subway-h1 {
+	&.gc-subway-cra h1,
+	&.gc-subway-cra-section .gc-subway-cra-h1 {
 		background-color: #fff;
 		border-bottom-width: 0px;
 		color: #555;
@@ -130,7 +130,7 @@
 }
 
 // Remove the border for index pages, when an h1 precede the subway nav.
-h1 ~ .provisional.gc-subway {
+h1 ~ .provisional.gc-subway-cra {
 	border-right: none;
 	border-top: none;
 }

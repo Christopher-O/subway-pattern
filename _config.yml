@@ -1,5 +1,5 @@
 remote_theme: wet-boew/gcweb-jekyll
-
+layout: no-title-post
 
 #
 # Page front matter defaults

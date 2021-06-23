@@ -128,10 +128,11 @@ h1:nth-child(1):not(.gc-thickline):not(#gc-document-nav) {
 	 margin-top: -19px;
 	 padding: 0px 20px 10px 0px;
 }
- h1 ~ .provisional.gc-subway-cra {
+ /* Remove to cancel conflict in mobile 
+h1 ~ .provisional.gc-subway-cra {
 	 border-right: none;
 	 border-top: none;
-}
+} */
  
 
 

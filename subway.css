@@ -1,3 +1,8 @@
+/*Temporary CSS removal of default h1 */
+h1:nth-child(1):not(.gc-thickline):not(#gc-document-nav) {
+	display:none;
+}
+
 .provisional {
 	/*** GC Subway mobile first styles ***/
 	/* Double H1 */

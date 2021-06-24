@@ -72,6 +72,9 @@ h1:nth-child(1):not(.gc-thickline):not(#gc-document-nav) {
 	 border-left: 4px solid #26374a;
 	 padding: 0px 20px 30px 1em;
 }
+.provisional.gc-subway-cra ul li ul.noline li {
+	 border-left: 5px solid transparent;;
+}
  .provisional.gc-subway-cra ul li a::before, .provisional.gc-subway-cra dl li a::before {
 	 background-color: #fff;
 	 border: 3px solid #26374a;
@@ -90,10 +93,10 @@ h1:nth-child(1):not(.gc-thickline):not(#gc-document-nav) {
  .provisional.gc-subway-cra ul li a.active::before, .provisional.gc-subway-cra dl li a.active::before {
 	 background-color: #26374a;
 }
- .provisional.gc-subway-cra ul li a.active:hover, .provisional.gc-subway-cra dl li a.active:hover, .provisional.gc-subway-cra ul li a.active:focus, .provisional.gc-subway-cra dl li a.active:focus {
+ /*.provisional.gc-subway-cra ul li a.active:hover, .provisional.gc-subway-cra dl li a.active:hover, .provisional.gc-subway-cra ul li a.active:focus, .provisional.gc-subway-cra dl li a.active:focus {
 	 color: #0535d2;
 	 text-decoration: underline;
-}
+} */
  .provisional.gc-subway-cra ul li a:not(.active):hover::before, .provisional.gc-subway-cra dl li a:not(.active):hover::before, .provisional.gc-subway-cra ul li a:not(.active):focus::before, .provisional.gc-subway-cra dl li a:not(.active):focus::before {
 	 height: 1.5em;
 	 left: -0.1em;

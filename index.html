@@ -3,11 +3,15 @@ title: false
 script: subway.js
 css: subway.css
 lang: en
+layout: without-h1
 ---
 <nav class="provisional gc-subway-cra">
 	<h1 id="gc-document-nav">[Service name]</h1>
 	<ul>
-		<li><a href="gc-subway-en.html" class="active" aria-current="page">[Page 1]</a></li>
+		<li>
+			<a href="page1-en.html" class="hidden-xs hidden-sm">[Page 1]</a>
+			<a href="page1-en.html#gc-document-nav" class="visible-xs visible-sm">[Page 1]</a>
+		</li>
 		<li>
 			<a href="page2-en.html" class="hidden-xs hidden-sm">[Page 2]</a>
 			<a href="page2-en.html#gc-document-nav" class="visible-xs visible-sm">[Page 2]</a>
@@ -15,6 +19,25 @@ lang: en
 		<li>
 			<a href="#" class="hidden-xs hidden-sm">[Page 3]</a>
 			<a href="#gc-document-nav" class="visible-xs visible-sm">[Page 3]</a>
+			<ul class="noline">
+				<li>
+					<a href="page3a-en.html" class="hidden-xs hidden-sm">[Page 3a]</a>
+					<a href="page3a-en.html#gc-document-nav" class="visible-xs visible-sm">[Page 3a]</a>
+				</li>
+				<li>
+					<a class="active" aria-current="page">[Page 3b]</a>
+				</li>
+				<li>
+					<a href="#" class="hidden-xs hidden-sm">[Page 3c]</a>
+					<a href="#gc-document-nav" class="visible-xs visible-sm">[Page 3c]</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="hidden-xs hidden-sm">[Page 4]</a>
+			<a href="#gc-document-nav" class="visible-xs visible-sm">[Page 4]</a>
+		</li>	
+			
 		</li>
 		<li>
 			<a href="#" class="hidden-xs hidden-sm">[Page 4]</a>

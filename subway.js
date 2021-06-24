@@ -96,6 +96,8 @@ var $document = wb.doc,
 			$h1.removeClass( toggleClass );
 			$h1Copy.remove();
 			$( "h2:first-child", $menu ).remove();
+			$("#gc-subway-cra-support").appendTo(".gc-subway-cra-section");
+			 
 		}
 	},
 

@@ -1,4 +1,4 @@
-/**
+	/**
  * @title WET-BOEW GC Subway map mutator
  * @overview Plugin used to mutate DOM elements depending on viewport size, in order to follow order accessibility criteria while respecting UI
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
@@ -89,7 +89,7 @@ var $document = wb.doc,
 			$h1.addClass( toggleClass );
 			$h1Copy.prependTo( $main );
 			$h2.prependTo( $menu );
-			$("#gc-subway-cra-support").appendTo("nav.gc-subway-cra");
+			$("#gc-subway-cra-support").insertAfter("nav.gc-subway-cra");
 		} else if ( ( $html.hasClass( views.sm ) || $html.hasClass( views.xs ) || $html.hasClass( views.xxs ) ) && desktopInited ) {
 
 			// Mobile view, mutate back to mobile first if needed

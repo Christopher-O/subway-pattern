@@ -170,7 +170,7 @@ h1 ~ .provisional.gc-subway-cra {
 	 width: 33.33%;
 	 clear: both;
 }
-.provisional gc-subway-cra-section {
+.provisional .gc-subway-cra-section {
 	clear: both;
 	
 	
@@ -178,7 +178,7 @@ h1 ~ .provisional.gc-subway-cra {
 .gc-subway-cra-section + .gc-subway-cra-support {
 	clear: both;
 	float: right;
-	padding-left:15px;
+	padding-left: 15px;
 	width: 33.33%;
 	
 }	

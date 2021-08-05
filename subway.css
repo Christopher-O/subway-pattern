@@ -1,4 +1,4 @@
-#gc-subway-cra-support h2,  .gc-subway-cra-support h3 
+.gc-subway-cra-support h2,  .gc-subway-cra-support h3 
 	{font-size: 1.1em;
 	margin-top:0;}
 
@@ -170,7 +170,12 @@ h1 ~ .provisional.gc-subway-cra {
 	 width: 33.33%;
 	 clear: both;
 }
-.provisional.gc-subway-cra + #gc-subway-cra-support {
+.provisional gc-subway-cra-section {
+	clear: both;
+	
+	
+}		
+.provisional gc-subway-cra-section + .gc-subway-cra-support {
 	clear: both;
 	float: right;
 	padding-left:15px;

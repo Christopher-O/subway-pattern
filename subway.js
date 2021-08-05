@@ -111,7 +111,7 @@ var $document = wb.doc,
 		$h1Copy = $( "<div class='gc-subway-cra-h1' aria-hidden='true'>" + $h1.text() + "</div>" );
 		$( "ul", $elm ).first().wrap( "<div class='gc-subway-cra-menu-nav'></div>" );
 		$menu = $( ".gc-subway-cra-menu-nav", $elm );
-		$elm.nextUntil( ".pagedetails, .gc-subway-cra-section-end" ).wrapAll( "<section class='provisional " + mainClass + "'>" );
+		$elm.nextUntil( ".pagedetails, .gc-subway-cra-support, .gc-subway-cra-section-end" ).wrapAll( "<section class='provisional " + mainClass + "'>" );
 		$main = $elm.next();
 
 		// Prevent on-load blinking on desktop

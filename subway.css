@@ -178,7 +178,7 @@ h1 ~ .provisional.gc-subway-cra {
 	width: 33.33%;
 	
 }	
-.gc-subway-cra-section + .pagedetails. .gc-subway-cra-section + .gc-subway-cra-support + .pagedetails	{
+.gc-subway-cra-section + .pagedetails, .gc-subway-cra-section + .gc-subway-cra-support + .pagedetails	{
 	clear:both;
 	}
 	

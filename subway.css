@@ -176,12 +176,15 @@ h1 ~ .provisional.gc-subway-cra {
 	
 }		
 .gc-subway-cra-section + .gc-subway-cra-support {
-	clear: both;
+	clear: right;
 	float: right;
 	padding-left: 15px;
 	width: 33.33%;
 	
 }	
+.gc-subway-cra-section + .gc-subway-cra-support + .pagedetails	{
+	clear:both;
+	}
 	
  .provisional.gc-subway-cra ul li:last-child {
 	 border-bottom: 0px;

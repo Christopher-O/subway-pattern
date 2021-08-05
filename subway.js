@@ -89,14 +89,14 @@ var $document = wb.doc,
 			$h1.addClass( toggleClass );
 			$h1Copy.prependTo( $main );
 			$h2.prependTo( $menu );
-			$("#gc-subway-cra-support").insertAfter("nav.gc-subway-cra");
+			
 		} else if ( ( $html.hasClass( views.sm ) || $html.hasClass( views.xs ) || $html.hasClass( views.xxs ) ) && desktopInited ) {
 
 			// Mobile view, mutate back to mobile first if needed
 			$h1.removeClass( toggleClass );
 			$h1Copy.remove();
 			$( "h2:first-child", $menu ).remove();
-			$("#gc-subway-cra-support").appendTo(".gc-subway-cra-section");
+			
 			 
 		}
 	},

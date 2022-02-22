@@ -213,3 +213,10 @@ h1 ~ .provisional.gc-subway-cra {
 	 max-width: initial;
 }
 }
+/* Visual tab design for active page */
+a[tabindex="0"]:focus {
+border: 2px solid black;
+border-radius: 4px;
+}
+
+

@@ -215,8 +215,11 @@ h1 ~ .provisional.gc-subway-cra {
 }
 /* Visual tab design for active page */
 a[tabindex="0"]:focus {
-border: 2px solid black;
-border-radius: 4px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 2px;
+  margin-left: -2px;
 }
+
 
 

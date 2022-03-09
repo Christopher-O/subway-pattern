@@ -41,7 +41,7 @@ var $document = wb.doc,
 		if ( elm && event.currentTarget === event.target ) {
 			$elm = $( elm );
 			$nav = $( "h2", $elm );
-			navmenu = $nav.get("#gc-document-nav" );
+			navmenu = $nav.get(3);
 
 			// Add Subway H1 to skip links only once and if it is a sub-page
 			if ( navmenu ) {

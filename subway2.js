@@ -1,4 +1,4 @@
-	/**
+/**
  * @title WET-BOEW GC Subway map mutator
  * @overview Plugin used to mutate DOM elements depending on viewport size, in order to follow order accessibility criteria while respecting UI
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
@@ -23,7 +23,7 @@ var $document = wb.doc,
 	toggleClass = "wb-inv",
 	desktopInited = false,
 	$html = wb.html,
-	$h1, $h2, $h1Copy, $menu, $main,
+	$nav, $h2, $h1Copy, $menu, $main,
 
 	/**
 	 * @method init
@@ -40,16 +40,16 @@ var $document = wb.doc,
 
 		if ( elm && event.currentTarget === event.target ) {
 			$elm = $( elm );
-			$h1 = $( "h1", $elm );
-			h1 = $h1.get( 0 );
+			$nav = $( "h2", $elm );
+			navmenu = $nav.get("#gc-document-nav" );
 
 			// Add Subway H1 to skip links only once and if it is a sub-page
-			if ( h1 ) {
+			if ( navmenu ) {
 
 				// Ensure the element have an ID
-				h1.id = h1.id || wb.getId();
+				navmenu.id = navmenu.id || wb.getId();
 
-				wb.addSkipLink( wb.i18n( "skip-prefix" ) + " " + h1.textContent, { href: "#" + h1.id } );
+				wb.addSkipLink( wb.i18n( "skip-prefix" ) + " " + navmenu.textContent, { href: "#" + navmenu.id } );
 			}
 
 			// trigger resizing
@@ -86,15 +86,15 @@ var $document = wb.doc,
 			if ( !desktopInited ) {
 				initDesktop( $elm );
 			}
-			$h1.addClass( toggleClass );
-			$h1Copy.prependTo( $main );
+			$nav.addClass( toggleClass );
+			$navCopy.prependTo( $main );
 			$h2.prependTo( $menu );
 			
 		} else if ( ( $html.hasClass( views.sm ) || $html.hasClass( views.xs ) || $html.hasClass( views.xxs ) ) && desktopInited ) {
 
 			// Mobile view, mutate back to mobile first if needed
-			$h1.removeClass( toggleClass );
-			$h1Copy.remove();
+			$nav.removeClass( toggleClass );
+			$navCopy.remove();
 			$( "h2:first-child", $menu ).remove();
 			
 			 
@@ -108,7 +108,7 @@ var $document = wb.doc,
 	 */
 	initDesktop = function( $elm ) {
 		$h2 = $( "<h2 class='h3 hidden-xs visible-md visible-lg mrgn-tp-0'>Sections</h2>" );
-		$h1Copy = $( "<div class='gc-subway-cra-h1' aria-hidden='true'>" + $h1.text() + "</div>" );
+		$h1Copy = $( "<div class='gc-subway-cra-nav' aria-hidden='true'>" + $nav.text() + "</div>" );
 		$( "ul", $elm ).first().wrap( "<div class='gc-subway-cra-menu-nav'></div>" );
 		$menu = $( ".gc-subway-cra-menu-nav", $elm );
 		$elm.nextUntil( ".pagedetails, .gc-subway-cra-support, .gc-subway-cra-section-end" ).wrapAll( "<section class='provisional " + mainClass + "'>" );

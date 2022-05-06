@@ -6,25 +6,25 @@
 	/*** GC Subway mobile first styles ***/
 	/* Double H1 */
 }
- .provisional.gc-subway {
+ .provisional.gc-subway-2 {
 	 border-radius: 0px 6px 6px 0px;
 	 border-right: 4px solid #26374a;
 	 border-top: 4px solid #26374a;
 	 margin-top: 38px;
 }
- .provisional.gc-subway>nav ul, .provisional.gc-subway dl {
+ .provisional.gc-subway-2>nav ul, .provisional.gc-subway-2 dl {
 	 clear: both;
 	 list-style: none;
 	 padding-left: 0.57em;
 	 padding-top: 10px;
 	 position: relative;
 }
-.provisional.gc-subway dl dt {
+.provisional.gc-subway-2 dl dt {
 	 border-left: 4px solid #26374a;
 	 padding: 0px 20px 3px 1em;
 	 font-weight: normal;
 }
-.provisional.gc-subway dl dt a::before {
+.provisional.gc-subway-2 dl dt a::before {
 	 background-color: #fff;
 	 border: 3px solid #26374a;
 	 border-radius: 50%;
@@ -35,46 +35,46 @@
 	 transition: width 0.2s, height 0.2s, left 0.2s, margin-top 0.2s;
 	 width: 1.3em;
 }
-.provisional.gc-subway dl dt a.active {
+.provisional.gc-subway-2 dl dt a.active {
 	 color: #333;
 	 text-decoration: none;
 }
-.provisional.gc-subway dl dt a.active::before {
+.provisional.gc-subway-2 dl dt a.active::before {
 	 background-color: #26374a;
 }
-.provisional.gc-subway dl dt a.active:hover, .provisional.gc-subway dl dt a.active:focus {
+.provisional.gc-subway-2 dl dt a.active:hover, .provisional.gc-subway-2 dl dt a.active:focus {
 	 color: #0535d2;
 	 text-decoration: underline;
 }
-.provisional.gc-subway dl dt a:not(.active):hover::before, .provisional.gc-subway dl dt a:not(.active):focus::before {
+.provisional.gc-subway-2 dl dt a:not(.active):hover::before, .provisional.gc-subway-2 dl dt a:not(.active):focus::before {
 	 height: 1.5em;
 	 left: -0.1em;
 	 margin-top: -0.1em;
 	 width: 1.5em;
 }
-.provisional.gc-subway dl dt:last-of-type {
+.provisional.gc-subway-2 dl dt:last-of-type {
 	 border-left: 5px solid transparent;
 	 padding-bottom: 0;
 }
- .provisional.gc-subway ul dd, .provisional.gc-subway dl dd {
+ .provisional.gc-subway-2 ul dd, .provisional.gc-subway-2 dl dd {
 	 border-left: 4px solid #26374a;
 	 line-height: inherit !important;
 	 margin-bottom: 0px;
 	 margin-top: -3px;
 	 padding: 0px 20px 20px 1em;
 }
- .provisional.gc-subway ul dd:last-child, .provisional.gc-subway dl dd:last-child {
+ .provisional.gc-subway-2 ul dd:last-child, .provisional.gc-subway-2 dl dd:last-child {
 	 border-left: 5px solid transparent;
 	 padding-bottom: 0;
 }
- .provisional.gc-subway>nav ul li, .provisional.gc-subway dl li {
+ .provisional.gc-subway-2>nav ul li, .provisional.gc-subway-2 dl li {
 	 border-left: 4px solid #26374a;
 	 padding: 0px 20px 30px 1em;
 }
-.provisional.gc-subway>nav ul li ul.noline li {
+.provisional.gc-subway-2>nav ul li ul.noline li {
 	 border-left: 5px solid transparent;
 }
- .provisional.gc-subway>nav ul li a::before, .provisional.gc-subway dl li a::before {
+ .provisional.gc-subway-2>nav ul li a::before, .provisional.gc-subway-2 dl li a::before {
 	 background-color: #fff;
 	 border: 3px solid #26374a;
 	 border-radius: 50%;
@@ -85,14 +85,14 @@
 	 transition: width 0.2s, height 0.2s, left 0.2s, margin-top 0.2s;
 	 width: 1.2em;
 }
- .provisional.gc-subway>nav ul li a.active, .provisional.gc-subway dl li a.active {
+ .provisional.gc-subway-2>nav ul li a.active, .provisional.gc-subway-2 dl li a.active {
 	 color: #333;
 	 text-decoration: none;
 }
- .provisional.gc-subway>nav ul li a.active::before, .provisional.gc-subway dl li a.active::before {
+ .provisional.gc-subway-2>nav ul li a.active::before, .provisional.gc-subway-2 dl li a.active::before {
 	 background-color: #26374a;
 }
-.provisional.gc-subway>nav ul li ul.noline li a.active::after {
+.provisional.gc-subway-2>nav ul li ul.noline li a.active::after {
 	content: " ";
 	height: 4px;
 	width: 1.6em;
@@ -103,39 +103,39 @@
 	left: 0;
 }
 
- /*.provisional.gc-subway ul li a.active:hover, .provisional.gc-subway dl li a.active:hover, .provisional.gc-subway ul li a.active:focus, .provisional.gc-subway dl li a.active:focus {
+ /*.provisional.gc-subway-2 ul li a.active:hover, .provisional.gc-subway-2 dl li a.active:hover, .provisional.gc-subway-2 ul li a.active:focus, .provisional.gc-subway-2 dl li a.active:focus {
 	 color: #0535d2;
 	 text-decoration: underline;
 } */
 
- .provisional.gc-subway>nav ul li a:not(.active):hover::before, .provisional.gc-subway dl li a:not(.active):hover::before, .provisional.gc-subway>nav ul li a:not(.active):focus::before, .provisional.gc-subway dl li a:not(.active):focus::before {
+ .provisional.gc-subway-2>nav ul li a:not(.active):hover::before, .provisional.gc-subway-2 dl li a:not(.active):hover::before, .provisional.gc-subway-2>nav ul li a:not(.active):focus::before, .provisional.gc-subway-2 dl li a:not(.active):focus::before {
 	 height: 1.5em;
 	 left: -0.1em;
 	 margin-top: -0.1em;
 	 width: 1.5em;
 }
- .provisional.gc-subway>nav ul li::first-line, .provisional.gc-subway dl li::first-line {
+ .provisional.gc-subway-2>nav ul li::first-line, .provisional.gc-subway-2 dl li::first-line {
 	 line-height: 1 !important;
 }
- .provisional.gc-subway>nav ul li:last-child, .provisional.gc-subway dl li:last-child {
+ .provisional.gc-subway-2>nav ul li:last-child, .provisional.gc-subway-2 dl li:last-child {
 	 border-bottom: 4px solid #26374a;
 	 border-bottom-left-radius: 6px;
 	 border-left: 4px solid #26374a;
 }
- .provisional.gc-subway>nav ul li ul, .provisional.gc-subway dl li ul {
+ .provisional.gc-subway-2>nav ul li ul, .provisional.gc-subway-2 dl li ul {
 	 margin-top: 20px;
 	 padding-left: 0.55em;
 }
- .provisional.gc-subway>nav ul li ul li:last-child, .provisional.gc-subway dl li ul li:last-child {
+ .provisional.gc-subway-2>nav ul li ul li:last-child, .provisional.gc-subway-2 dl li ul li:last-child {
 	 border-bottom-width: 0px;
 	 padding-bottom: 0px;
 }
 	/*changed*/
- .provisional.gc-subway #gc-document-nav {
+ .provisional.gc-subway-2 #gc-document-nav {
 	 float: left;
 }
 /*changed*/	
- .provisional.gc-subway #gc-document-nav, .provisional.gc-subway-section .gc-subway-nav {
+ .provisional.gc-subway-2 #gc-document-nav, .provisional.gc-subway-section .gc-subway-nav {
 	 background-color: #fff;
 	 border-bottom-width: 0px;
 	 color: #555;
@@ -145,7 +145,7 @@
 	 padding: 0px 20px 10px 0px;
 }
  /* Remove to cancel conflict in mobile 
-h1 ~ .provisional.gc-subway {
+h1 ~ .provisional.gc-subway-2 {
 	 border-right: none;
 	 border-top: none;
 } */
@@ -157,17 +157,17 @@ h1 ~ .provisional.gc-subway {
  .provisional {
 	/* Double H1 */
 }
- .provisional.gc-subway {
+ .provisional.gc-subway-2 {
 	 border-right: 0px;
 	 border-top: 0px;
 	 display: none;
 	 margin-top: 25px;
 	 padding-left: 15px;
 }
- .provisional.gc-subway.no-blink {
+ .provisional.gc-subway-2.no-blink {
 	 display: block;
 }
- .provisional.gc-subway {
+ .provisional.gc-subway-2 {
 	 float: right;
 	 width: 33.33%;
 	 clear: both;
@@ -184,7 +184,7 @@ h1 ~ .provisional.gc-subway {
 	clear:both;
 	}
 	
- .provisional.gc-subway>nav ul li:last-child {
+ .provisional.gc-subway-2>nav ul li:last-child {
 	 border-bottom: 0px;
 	 border-left: 4px solid transparent;
 }
@@ -205,14 +205,14 @@ h1 ~ .provisional.gc-subway {
 	 padding-bottom: 0px !important;
 	 padding-left: 0px;
 }
- .wb-disable .provisional.gc-subway {
+ .wb-disable .provisional.gc-subway-2 {
 	 display: block;
 }
 }
 
 
 @media screen and (max-width:991px) {
-.provisional.gc-subway dt, .provisional.gc-subway li {
+.provisional.gc-subway-2 dt, .provisional.gc-subway-2 li {
 	 max-width: initial;
 }
 }

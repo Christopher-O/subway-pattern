@@ -8,7 +8,7 @@
 "use strict";
 
 var $document = wb.doc,
-	componentName = "gc-subway-cra",
+	componentName = "gc-subway",
 	selector = ".provisional." + componentName,
 	initEvent = "wb-init ." + componentName,
 	views = {
@@ -19,11 +19,11 @@ var $document = wb.doc,
 		lg: "largeview",
 		xl: "xlargeview"
 	},
-	mainClass = "gc-subway-cra-section",
+	mainClass = "gc-subway-section",
 	toggleClass = "wb-inv",
 	desktopInited = false,
 	$html = wb.html,
-	$nav, $h2, $h1Copy, $menu, $main,
+	$h1, $h2, $h1Copy, $menu, $main,
 
 	/**
 	 * @method init
@@ -35,21 +35,21 @@ var $document = wb.doc,
 		// returns DOM object = proceed with init
 		// returns undefined = do not proceed with init (e.g., already initialized)
 		var elm = wb.init( event, componentName, selector ),
-			navmenu,
+			h2,
 			$elm;
 
 		if ( elm && event.currentTarget === event.target ) {
 			$elm = $( elm );
-			$nav = $( "h2", $elm );
-			navmenu = $nav.get(3);
+			$h1 = $( "#gc-document-nav", $elm );
+			h2 = $h1.get( 0 );
 
 			// Add Subway H1 to skip links only once and if it is a sub-page
-			if ( navmenu ) {
+			if ( h2 ) {
 
 				// Ensure the element have an ID
-				navmenu.id = navmenu.id || wb.getId();
+				h2.id = h2.id || wb.getId();
 
-				wb.addSkipLink( wb.i18n( "skip-prefix" ) + " " + navmenu.textContent, { href: "#" + navmenu.id } );
+				wb.addSkipLink( wb.i18n( "skip-prefix" ) + " " + h2.textContent, { href: "#" + h2.id } );
 			}
 
 			// trigger resizing
@@ -71,8 +71,8 @@ var $document = wb.doc,
 			$elm = $( selector );
 		}
 
-		// Ensure the page contains at least two heading level 1
-		if ( $( "main h2" ).length < 2 ) {
+		// Ensure the page contains at least one heading level 1
+		if ( $( "main h1" ).length > 1 ) {
 			$document.off( wb.resizeEvents, onResize );
 			$elm.addClass( "no-blink p-0" );
 			return;
@@ -86,18 +86,17 @@ var $document = wb.doc,
 			if ( !desktopInited ) {
 				initDesktop( $elm );
 			}
-			$nav.addClass( toggleClass );
-			$navCopy.prependTo( $main );
+			$h1.addClass( toggleClass );
+			$h1Copy.prependTo( $main );
 			$h2.prependTo( $menu );
-			
+			$('.gc-subway-support').appendTo(".gc-subway");
 		} else if ( ( $html.hasClass( views.sm ) || $html.hasClass( views.xs ) || $html.hasClass( views.xxs ) ) && desktopInited ) {
 
 			// Mobile view, mutate back to mobile first if needed
-			$nav.removeClass( toggleClass );
-			$navCopy.remove();
+			$h1.removeClass( toggleClass );
+			$h1Copy.remove();
+			$('.gc-subway-support').appendTo(".gc-subway-section");
 			$( "h2:first-child", $menu ).remove();
-			
-			 
 		}
 	},
 
@@ -108,10 +107,10 @@ var $document = wb.doc,
 	 */
 	initDesktop = function( $elm ) {
 		$h2 = $( "<h2 class='h3 hidden-xs visible-md visible-lg mrgn-tp-0'>Sections</h2>" );
-		$h1Copy = $( "<div class='gc-subway-cra-nav' aria-hidden='true'>" + $nav.text() + "</div>" );
-		$( "ul", $elm ).first().wrap( "<div class='gc-subway-cra-menu-nav'></div>" );
-		$menu = $( ".gc-subway-cra-menu-nav", $elm );
-		$elm.nextUntil( ".pagedetails, .gc-subway-cra-support, .gc-subway-cra-section-end" ).wrapAll( "<section class='provisional " + mainClass + "'>" );
+		$h1Copy = $( "<div class='gc-subway-h1' aria-hidden='true'>" + $h1.text() + "</div>" );
+		$( "ul", $elm ).first().wrap( "<div class='gc-subway-menu-nav'></div>" );
+		$menu = $( ".gc-subway-menu-nav", $elm );
+		$elm.nextUntil( ".pagedetails, .gc-subway-section-end" ).wrapAll( "<section class='provisional " + mainClass + "'>" );
 		$main = $elm.next();
 
 		// Prevent on-load blinking on desktop

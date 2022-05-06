@@ -89,7 +89,7 @@ var $document = wb.doc,
 			$h1.addClass( toggleClass );
 			$h1Copy.prependTo( $main );
 			$h2.prependTo( $menu );
-			$('.gc-subway-support').appendTo(".gc-subway");
+			$('.gc-subway-support').appendTo(".gc-subway-2");
 		} else if ( ( $html.hasClass( views.sm ) || $html.hasClass( views.xs ) || $html.hasClass( views.xxs ) ) && desktopInited ) {
 
 			// Mobile view, mutate back to mobile first if needed

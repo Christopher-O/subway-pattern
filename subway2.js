@@ -8,7 +8,7 @@
 "use strict";
 
 var $document = wb.doc,
-	componentName = "gc-subway",
+	componentName = "gc-subway-2",
 	selector = ".provisional." + componentName,
 	initEvent = "wb-init ." + componentName,
 	views = {

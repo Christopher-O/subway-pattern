@@ -217,9 +217,16 @@ h1 ~ .provisional.gc-subway-2 {
 }
 }
 /* Visual tab design for active page */
+/*Grey background
+
 a[tabindex="0"]:focus {
   background-color: #f0f0f0;
   border-radius: 4px;
   padding: 2px;
   margin-left: -2px;
+} */
+/*override theme no outline*/
+.gc-subway-2 a.active:not([href]):focus, .gc-subway-2 a.active:not([href]):hover {
+     outline-style: auto;
+    outline-width: revert;
 }

@@ -155,14 +155,7 @@ h1 ~ .provisional.gc-subway-2 {
 	 border-top: none;
 } */
  
-/* added */
-	ul.noline>li>a.active {
-		position: relative;
-	}
-	ul.noline>li>a.active::before {
-  margin-left: -36px; 
 
-}
 
 
 @media screen and (min-width:992px)  {

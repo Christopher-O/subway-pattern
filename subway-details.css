@@ -225,5 +225,5 @@ a[tabindex="0"]:focus {
 .gc-subway-cra-menu-nav .noline details summary {border:0!important; border-radius: 0!important; margin-left: -1.5em; margin-right: -1.5em; list-style: none; text-decoration: underline;}
 .gc-subway-cra-menu-nav .noline details ul.noline {margin-left:-1em; margin-right: -1em;}
 .gc-subway-cra-menu-nav .noline details summary::before {content: "\25B7"; text-decoration: none; display: inline-block;}
-.gc-subway-cra-menu-nav .noline details.open summary::before {content: "\25BC";}
+.gc-subway-cra-menu-nav .noline details[open] summary::before {content: "\25BC";}
 

@@ -220,5 +220,8 @@ a[tabindex="0"]:focus {
   padding: 2px;
   margin-left: -2px;
 }
-
+/*Details styles */
+ .provisional.gc-subway-cra-section .noline details {border-bottom: 0px; border-left: 0px; border-right: 0px; border-radius:0; margin-left:-2em;}
+.provisional.gc-subway-cra-section .noline details summary {border:0!important; border-radius: 0!important; margin-left: -1.5em; margin-right: -1.5em;}
+.provisional.gc-subway-cra-section .noline details ul.noline {margin-left:-1em; margin-right: -1em;}
 

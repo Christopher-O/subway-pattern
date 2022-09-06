@@ -221,7 +221,7 @@ a[tabindex="0"]:focus {
   margin-left: -2px;
 }
 /*Details styles */
-.gc-subway-cra-menu-nav .noline details {border-bottom: 0px; border-left: 0px; border-right: 0px; border-radius:0; margin-left:-2em;}
+.gc-subway-cra-menu-nav .noline details {border-bottom: 0px; border-left: 0px; border-right: 0px; border-radius:0; margin-left:-1.9em;}
 .gc-subway-cra-menu-nav .noline details summary {border:0!important; border-radius: 0!important; margin-left: -1.5em; margin-right: -1.5em;}
 .gc-subway-cra-menu-nav .noline details ul.noline {margin-left:-1em; margin-right: -1em;}
 

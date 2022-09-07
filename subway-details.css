@@ -98,9 +98,10 @@
 	width: 1.6em;
 	background-color: #26374a;
 	position: absolute;
-	margin-left: -1em;
-	margin-top: 0.5em;
+	margin-left: -3em;
+	margin-top: 0.7em;
 	left: 0;
+	top: 0;
 }
 
  /*.provisional.gc-subway-cra ul li a.active:hover, .provisional.gc-subway-cra dl li a.active:hover, .provisional.gc-subway-cra ul li a.active:focus, .provisional.gc-subway-cra dl li a.active:focus {

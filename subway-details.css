@@ -1,3 +1,7 @@
+:root {
+--subwaynav: #1e90ff;
+  }
+
 .gc-subway-cra-support h2,  .gc-subway-cra-support h3 
 	{font-size: 1.1em;
 	margin-top:0;}
@@ -8,8 +12,8 @@
 }
  .provisional.gc-subway-cra {
 	 border-radius: 0px 6px 6px 0px;
-	 border-right: 4px solid #26374a;
-	 border-top: 4px solid #26374a;
+	 border-right: 4px solid var(--subwaynav);
+	 border-top: 4px solid var(--subwaynav);
 	 margin-top: 38px;
 }
  .provisional.gc-subway-cra ul, .provisional.gc-subway-cra dl {
@@ -20,13 +24,13 @@
 	 position: relative;
 }
  .provisional.gc-subway-cra ul dt, .provisional.gc-subway-cra dl dt {
-	 border-left: 4px solid #26374a;
+	 border-left: 4px solid var(--subwaynav);
 	 padding: 0px 20px 3px 1em;
 	 font-weight: normal;
 }
  .provisional.gc-subway-cra ul dt a::before, .provisional.gc-subway-cra dl dt a::before {
 	 background-color: #fff;
-	 border: 3px solid #26374a;
+	 border: 3px solid var(--subwaynav);
 	 border-radius: 50%;
 	 content: "";
 	 height: 1.2em;
@@ -40,7 +44,7 @@
 	 text-decoration: none;
 }
  .provisional.gc-subway-cra ul dt a.active::before, .provisional.gc-subway-cra dl dt a.active::before {
-	 background-color: #26374a;
+	 background-color: var(--subwaynav);
 }
  .provisional.gc-subway-cra ul dt a.active:hover, .provisional.gc-subway-cra dl dt a.active:hover, .provisional.gc-subway-cra ul dt a.active:focus, .provisional.gc-subway-cra dl dt a.active:focus {
 	 color: #0535d2;
@@ -57,7 +61,7 @@
 	 padding-bottom: 0;
 }
  .provisional.gc-subway-cra ul dd, .provisional.gc-subway-cra dl dd {
-	 border-left: 4px solid #26374a;
+	 border-left: 4px solid var(--subwaynav);
 	 line-height: inherit !important;
 	 margin-bottom: 0px;
 	 margin-top: -3px;
@@ -68,7 +72,7 @@
 	 padding-bottom: 0;
 }
  .provisional.gc-subway-cra ul li, .provisional.gc-subway-cra dl li {
-	 border-left: 4px solid #26374a;
+	 border-left: 4px solid var(--subwaynav);
 	 padding: 0px 20px 30px 1em;
 }
 .provisional.gc-subway-cra ul li ul.noline li {
@@ -76,7 +80,7 @@
 }
  .provisional.gc-subway-cra ul li a::before, .provisional.gc-subway-cra dl li a::before {
 	 background-color: #fff;
-	 border: 3px solid #26374a;
+	 border: 3px solid var(--subwaynav);
 	 border-radius: 50%;
 	 content: "";
 	 height: 1.2em;
@@ -90,7 +94,7 @@
 	 text-decoration: none;
 }
  .provisional.gc-subway-cra ul li a.active::before, .provisional.gc-subway-cra dl li a.active::before {
-	 background-color: #26374a;
+	 background-color: var(--subwaynav);
 }
 ul.noline>li>a.active {
     position: relative;
@@ -102,7 +106,7 @@ ul.noline>li>a.active::before {
 	content: " ";
 	height: 4px;
 	width: 1.6em;
-	background-color: #26374a;
+	background-color: var(--subwaynav);
 	position: absolute;
 	margin-left: -3em;
 	margin-top: 0.7em;
@@ -125,9 +129,9 @@ ul.noline>li>a.active::before {
 	 line-height: 1 !important;
 }
  .provisional.gc-subway-cra ul li:last-child, .provisional.gc-subway-cra dl li:last-child {
-	 border-bottom: 4px solid #26374a;
+	 border-bottom: 4px solid var(--subwaynav);
 	 border-bottom-left-radius: 6px;
-	 border-left: 4px solid #26374a;
+	 border-left: 4px solid var(--subwaynav);
 }
  .provisional.gc-subway-cra ul li ul, .provisional.gc-subway-cra dl li ul {
 	 margin-top: 20px;
@@ -255,7 +259,7 @@ a[tabindex="0"]:focus {
     content: "\25BC";
     margin-left: -1.3em;
     font-size: 1.5em;
-    color: #26374a;
+    color: var(--subwaynav);
 }
 .gc-subway-cra-menu-nav .noline details:not([open]) summary:hover::before, .gc-subway-cra-menu-nav .noline details:not([open]) summary:focus::before {
     margin-top: -0.1em;

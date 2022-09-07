@@ -224,8 +224,12 @@ a[tabindex="0"]:focus {
 .gc-subway-cra-menu-nav .noline details {border-bottom: 0px; border-left: 0px; border-right: 0px; border-radius:0; margin-left:-1.9em;}
 .gc-subway-cra-menu-nav .noline details summary {border:0!important; border-radius: 0!important; margin-left: -1.5em; margin-right: -1.5em; list-style: none; text-decoration: underline;}
 .gc-subway-cra-menu-nav .noline details ul.noline {margin-left:-1em; margin-right: -1em;}
-.gc-subway-cra-menu-nav .noline details summary::before {content: "\25B7"; text-decoration: none; display: inline-block; font-weight: bolder; font-size: 1.3em; padding-right: 0.2em; transition: width 0.2s, height 0.2s, left 0.2s, margin-top 0.2s;}
-.gc-subway-cra-menu-nav .noline details[open] summary::before {content: "\25BC"; margin-left:-5px;}
+.gc-subway-cra-menu-nav .noline details summary::before {content: "\25B7"; text-decoration: none; display: inline-block; font-weight: bolder; font-size: 1.3em;  padding-right: 0.2em;
+    transition: font-size 0.1s, margin-left 0.1s;
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -0.2em;  position: absolute;}
+.gc-subway-cra-menu-nav .noline details[open] summary::before {content: "\25BC"; margin-left:-5px;  font-size: 1.5em;}
 .gc-subway-cra-menu-nav .noline details:not([open]) summary:hover::before, .gc-subway-cra-menu-nav .noline details:not([open]) summary:focus::before {
 	 left: -0.1em;
 	 margin-top: -0.1em;

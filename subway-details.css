@@ -230,7 +230,8 @@ a[tabindex="0"]:focus {
     text-decoration: underline;
 }
 .gc-subway-cra-menu-nav .noline details ul.noline {margin-left:-1em; margin-right: -1em;}
-..gc-subway-cra-menu-nav .noline details summary::before {
+
+.gc-subway-cra-menu-nav .noline details summary::before {
     content: "\25B7";
     text-decoration: none;
     display: inline-block;

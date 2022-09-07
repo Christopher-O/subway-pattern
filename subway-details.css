@@ -1,6 +1,11 @@
 :root {
 --subwaynav: #26374a;
   }
+@media (prefers-color-scheme: dark) {
+:root {
+--subwaynav: #1e90ff;
+  }
+}
 
 .gc-subway-cra-support h2,  .gc-subway-cra-support h3 
 	{font-size: 1.1em;

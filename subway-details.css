@@ -92,6 +92,12 @@
  .provisional.gc-subway-cra ul li a.active::before, .provisional.gc-subway-cra dl li a.active::before {
 	 background-color: #26374a;
 }
+ul.noline>li>a.active {
+    position: relative;
+}
+ul.noline>li>a.active::before {
+    margin-left: -36px;
+}
 .provisional.gc-subway-cra ul li ul.noline li a.active::after {
 	content: " ";
 	height: 4px;

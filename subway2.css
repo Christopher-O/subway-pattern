@@ -12,6 +12,11 @@
 	 border-top: 4px solid #26374a;
 	 margin-top: 38px;
 }
+.provisional.gc-subway-2:has(dl) {
+    border-right: none;
+    border-top: none;
+}
+
  .provisional.gc-subway-2>nav ul, .provisional.gc-subway-2 dl {
 	 clear: both;
 	 list-style: none;

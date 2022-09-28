@@ -93,7 +93,7 @@
 	 background-color: #26374a;
 }
 	/*added top:0 */
-.provisional.gc-subway-2>nav ul li ul.noline li a.active::after {
+.provisional.gc-subway-2>nav ul li:not(:last-child) ul.noline li a.active::after {
 	content: " ";
 	height: 4px;
 	width: 1.6em;

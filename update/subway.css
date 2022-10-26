@@ -223,7 +223,7 @@
 .provisional.gc-subway2 ul li ul.noline li {
 	 border-left: 4px solid transparent;
 }
-.provisional.gc-subway2 ul li:not(:last-child) ul.noline li a.active::after, .provisional.gc-subway2 ul li:last-child:has(ul.noline) li a.active::after {
+.provisional.gc-subway2 ul li:not(:last-child) ul.noline li a.active::after {
     content: " ";
     height: 4px;
     width: 1.6em;
@@ -234,6 +234,19 @@
     margin-top: 0.5em;
     left: 0;
 } 
+/**** added (duplicated because Firefox does not support :has natively yet) */
+.provisional.gc-subway2 ul li:last-child:has(ul.noline) li a.active::after {
+    content: " ";
+    height: 4px;
+    width: 1.6em;
+    background-color: #26374a;
+    position: absolute;
+    /* margin-left: -1em; */
+    margin-left: -2.8em;
+    margin-top: 0.5em;
+    left: 0;
+} 
+
 .provisional.gc-subway2 ul li ul.noline>li>a {
 		position: relative;
 	}

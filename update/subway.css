@@ -1,0 +1,372 @@
+.provisional {
+/*** GC Subway mobile first styles ***/
+	/* Double H1 */ }
+.provisional.gc-subway2 {
+	border-radius: 0px 6px 6px 0px;
+	border-right: 4px solid #26374a;
+	border-top: 4px solid #26374a;
+	margin-top: 38px;
+}
+.provisional.gc-subway2 ul,  .provisional.gc-subway2 dl {
+	clear: both;
+	list-style: none;
+	padding-left: .57em;
+	padding-top: 10px;
+	position: relative;
+}
+/**** change below (ul dt incorrect
+)			.provisional.gc-subway2 ul dt,
+			.provisional.gc-subway2 dl dt {
+				border-left: 4px solid #26374a;
+				padding: 0px 20px 3px 1em;
+				font-weight: normal; } */
+.provisional.gc-subway2 dl dt {
+	border-left: 4px solid #26374a;
+	padding: 0px 20px 3px 1em;
+	font-weight: normal;
+}
+/**** delete (ul dt incorrect, moved dl dt)
+.provisional.gc-subway2 ul dt a::before,
+				.provisional.gc-subway2 dl dt a::before {
+					background-color: #fff;
+					border: 3px solid #26374a;
+					border-radius: 50%;
+					content: "";
+					height: 1.2em;
+					left: 0em;
+					position: absolute;
+					-webkit-transition: width .2s, height .2s, left .2s, margin-top .2s;
+					transition: width .2s, height .2s, left .2s, margin-top .2s;
+					width: 1.3em; } 
+				.provisional.gc-subway2 ul dt a.active,
+				.provisional.gc-subway2 dl dt a.active {
+					color: #333333;
+					text-decoration: none; }
+					.provisional.gc-subway2 ul dt a.active::before,
+					.provisional.gc-subway2 dl dt a.active::before {
+						background-color: #26374a; }
+					.provisional.gc-subway2 ul dt a.active:hover, .provisional.gc-subway2 ul dt a.active:focus,
+					.provisional.gc-subway2 dl dt a.active:hover,
+					.provisional.gc-subway2 dl dt a.active:focus {
+						color: #0535d2;
+						text-decoration: underline; } */
+
+
+	/**** change below (ul dt/dd not correct dl does not have active)
+.provisional.gc-subway2 ul dt a:not(.active):hover::before, .provisional.gc-subway2 ul dt a:not(.active):focus::before,
+				.provisional.gc-subway2 dl dt a:not(.active):hover::before,
+				.provisional.gc-subway2 dl dt a:not(.active):focus::before {
+					height: 1.5em;
+					left: -.1em;
+					margin-top: -.1em;
+					width: 1.5em; }
+				.provisional.gc-subway2 ul dt:last-of-type,
+				.provisional.gc-subway2 dl dt:last-of-type {
+					border-left: 5px solid transparent;
+					padding-bottom: 0; }
+			.provisional.gc-subway2 ul dd,
+			.provisional.gc-subway2 dl dd {
+				border-left: 4px solid #26374a;
+				line-height: inherit;
+				margin-bottom: 0px;
+				margin-top: -3px;
+				padding: 0px 20px 20px 1em; }
+				.provisional.gc-subway2 ul dd:last-child,
+				.provisional.gc-subway2 dl dd:last-child {
+					border-left: 5px solid transparent;
+					padding-bottom: 0; }
+			.provisional.gc-subway2 ul li,
+			.provisional.gc-subway2 dl li {
+				border-left: 4px solid #26374a;
+				padding: 0px 20px 30px 1em; } */
+
+				
+.provisional.gc-subway2 ul li,  .provisional.gc-subway2 dl dd {
+	border-left: 4px solid #26374a;
+	line-height: inherit;
+	margin-bottom: 0px;
+	margin-top: -3px;
+	padding: 0px 20px 20px 1em;
+}
+.provisional.gc-subway2 dl dt:last-of-type, .provisional.gc-subway2 dl dd:last-child {
+	border-left: 4px solid transparent;
+	padding-bottom: 0;
+}
+/**** (delete dl li incorrect, moved ul li above)	.provisional.gc-subway2 ul li,
+			.provisional.gc-subway2 dl li {
+				border-left: 4px solid #26374a;
+				padding: 0px 20px 30px 1em; }
+
+
+			/**** change below (dl li to dl dt)	.provisional.gc-subway2 ul li a::before,
+				.provisional.gc-subway2 dl li a::before {
+					background-color: #fff;
+					border: 3px solid #26374a;
+					border-radius: 50%;
+					content: "";
+					height: 1.2em;
+					left: 0.05em;
+					position: absolute;
+					-webkit-transition: width .2s, height .2s, left .2s, margin-top .2s;
+					transition: width .2s, height .2s, left .2s, margin-top .2s;
+					width: 1.2em; } */
+.provisional.gc-subway2 ul li a::before,  .provisional.gc-subway2 dl dt a::before {
+	background-color: #fff;
+	border: 3px solid #26374a;
+	border-radius: 50%;
+	content: "";
+	height: 1.2em;
+	left: 0.05em;
+	position: absolute;
+	-webkit-transition: width .2s, height .2s, left .2s, margin-top .2s;
+	transition: width .2s, height .2s, left .2s, margin-top .2s;
+	width: 1.2em;
+}
+/**** change below (dl do not have active classes)		
+.provisional.gc-subway2 ul li a.active,
+				.provisional.gc-subway2 dl li a.active {
+					color: #333333;
+					text-decoration: none; }
+					.provisional.gc-subway2 ul li a.active::before,
+					.provisional.gc-subway2 dl li a.active::before {
+						background-color: #26374a; }
+					.provisional.gc-subway2 ul li a.active:hover, .provisional.gc-subway2 ul li a.active:focus,
+					.provisional.gc-subway2 dl li a.active:hover,
+					.provisional.gc-subway2 dl li a.active:focus {
+						color: #0535d2;
+						text-decoration: underline; }
+				.provisional.gc-subway2 ul li a:not(.active):hover::before, .provisional.gc-subway2 ul li a:not(.active):focus::before,
+				.provisional.gc-subway2 dl li a:not(.active):hover::before,
+				.provisional.gc-subway2 dl li a:not(.active):focus::before {
+					height: 1.5em;
+					left: -.1em;
+					margin-top: -.1em;
+					width: 1.5em; } */
+.provisional.gc-subway2 ul li a.active {
+	color: #333333;
+	text-decoration: none;
+}
+.provisional.gc-subway2 ul li a.active::before {
+	background-color: #26374a;
+}
+.provisional.gc-subway2 ul li a.active:hover, .provisional.gc-subway2 ul li a.active:focus {
+	color: #0535d2;
+	text-decoration: underline;
+}
+.provisional.gc-subway2 ul li a:not(.active):hover::before, .provisional.gc-subway2 ul li a:not(.active):focus::before,  .provisional.gc-subway2 dl dt a:hover::before,  .provisional.gc-subway2 dl dt a:focus::before {
+	height: 1.5em;
+	left: -.1em;
+	margin-top: -.1em;
+	width: 1.5em;
+}
+/**** delete
+.provisional.gc-subway2 ul li::first-line,
+.provisional.gc-subway2 dl li::first-line {
+					line-height: 1; } */
+
+/**** change (dl > ul/li incorrect) 
+.provisional.gc-subway2 ul li:last-child,  .provisional.gc-subway2 dl li:last-child {
+	border-bottom: 4px solid #26374a;
+	border-bottom-left-radius: 6px;
+	border-left: 4px solid #26374a;
+} 
+
+
+.provisional.gc-subway2 ul li ul,  .provisional.gc-subway2 dl li ul {
+	margin-top: 20px;
+	padding-left: .55em;
+}
+.provisional.gc-subway2 ul li ul li:last-child,  .provisional.gc-subway2 dl li ul li:last-child {
+	border-bottom-width: 0px;
+	padding-bottom: 0px;
+} */
+.provisional.gc-subway2 ul li:last-child {
+	border-bottom: 4px solid #26374a;
+	border-bottom-left-radius: 6px;
+	border-left: 4px solid #26374a;
+} 
+
+
+.provisional.gc-subway2 ul li ul {
+	margin-top: 20px;
+	padding-left: .55em;
+}
+.provisional.gc-subway2 ul li ul li:last-child {
+	border-bottom-width: 0px;
+	padding-bottom: 0px;
+ border-left: 4px solid transparent;
+}
+
+
+.provisional.gc-subway2 h1 {
+	float: left;
+}
+.provisional.gc-subway2 h1,  .provisional.gc-subway-section .gc-subway-h1 {
+	background-color: #fff;
+	border-bottom-width: 0px;
+	color: #555;
+	font-size: 1.3em;
+	margin-right: 20px;
+	margin-top: -19px;
+	padding: 0px 20px 10px 0px;
+}
+/**** change below h1 ~ .provisional.gc-subway2 {
+	border-right: none;
+	border-top: none;
+} */
+.provisional.gc-subway2:has(dl) {
+    border-right: none;
+    border-top: none;
+}
+/**** new added noline class  ****/
+.provisional.gc-subway2 ul li ul.noline li {
+	 border-left: 5px solid transparent;
+}
+.provisional.gc-subway2 ul li ul.noline li a.active::after {
+	content: " ";
+	height: 4px;
+	width: 1.6em;
+	background-color: #26374a;
+	position: absolute;
+	/*margin-left: -1em;*/
+	margin-left: -2.8em;
+	margin-top: 0.5em;
+	left: 0;
+}
+.provisional.gc-subway2 ul li ul.noline>li>a {
+		position: relative;
+	}
+.provisional.gc-subway2 ul li ul.noline>li>a::before {
+  margin-left: -36px; 
+
+}
+/**** new added (revert active state to create full outline around tabbed active) ****/
+.gc-subway2 a.active:not([href]):focus, .gc-subway2 a.active:not([href]):hover {
+     outline-style: auto;
+    outline-width: revert;
+}
+/**** new added (styles for support content) */
+.gc-subway-menu-nav + .gc-subway-support>ul, .gc-subway-menu-nav + .gc-subway-support>ul li, .gc-subway-menu-nav + .gc-subway-support>ul li a:before {
+	all:revert;
+}
+.gc-subway-menu-nav + .gc-subway-support>ul {
+	margin-block-start: 0;
+	margin-block-end: 11px;
+}
+
+
+/**** new added (change header for support information) */
+.gc-subway-support h2,  .gc-subway-support h3 
+	{font-size: 1.1em;
+	margin-top:0;}
+
+
+/*
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ *
+ * Small view and under (screen only) - Variable $screen-sm-max <= 991 px
+ *
+ *	Provisional GC Subway map menu
+*/
+@media screen and (max-width:991px) {
+.provisional.gc-subway2 dt, .provisional.gc-subway2 li {
+	max-width: initial;
+}
+}
+/*
+ *
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ *
+ *
+ *	Provisional GC Subway map menu
+*/
+.provisional {
+/*** GC subway desktop styles ***/
+		/* Double H1 */ }
+
+@media screen and (min-width: 992px) {
+/**** change below (to incorporate new support content if availabe) 
+	
+	.provisional.gc-subway2 {
+	border-right: 0px;
+	border-top: 0px;
+	display: none;
+	margin-top: 25px;
+	padding-left: 15px;
+}*/
+.provisional.gc-subway2 {
+	border-right: 0px;
+	border-top: 0px;
+	display: none;
+	float: right;
+	margin-top: 25px;
+	padding-left: 15px;	
+	width: 33.33%;
+	}
+	
+.provisional.gc-subway2.no-blink {
+	display: block;
+}
+/**** delete (moved up level) .provisional.gc-subway2 .gc-subway-menu-nav {
+	float: right;
+	width: 33.33%;
+} */
+	
+/**** change below (to have line if last child has ul)	
+.provisional.gc-subway2 ul li:last-child {
+	border-bottom: 0px;
+	border-left: 4px solid transparent;
+} */
+.provisional.gc-subway2 ul li:last-child {
+	border-bottom: 0px;
+
+} 	
+/**** added (to remove border-left for last child with no ul in desktop)	*/
+.provisional.gc-subway2 ul li:last-child:not(:has(ul)) {
+border-left: 4px solid transparent;
+}
+/**** added (to remove border-radius from last child in desktop) */	
+.provisional.gc-subway2 ul li:last-child:has(ul) {
+border-radius: 0;
+}
+/**** added (to add end point to line) */
+	.provisional.gc-subway2 ul li:last-child:has(ul):after {
+    content: "";
+    background-color: #26374a;
+    border: 2px solid #26374a;
+    /* border-radius: 50%; */
+    width: 0.7em;
+    height: 0.7em;
+    bottom: 0;
+    left: 0.3em;
+    position: absolute;
+    border-radius: 0;
+}
+	
+/**** update below	
+	.provisional.gc-subway-section {
+			padding-right: 15px;
+			width: 66.66%; } */
+.provisional.gc-subway-section {
+	display: inline-block;
+	padding-right: 15px;
+	width: 66.66%;
+}
+.provisional.gc-subway-section h1, .provisional.gc-subway-section .gc-subway-h1 {
+	margin-top: 0px;
+}
+.provisional.gc-subway-section .gc-subway-h1 {
+	font-family: Lato, sans-serif;
+	font-weight: inherit;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-bottom: 0px !important;
+	padding-left: 0px;
+}
+.wb-disable .provisional.gc-subway2 {
+	display: block;
+}
+	
+	}

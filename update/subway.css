@@ -201,7 +201,7 @@
 .provisional.gc-subway2 h1 {
 	float: left;
 }
-.provisional.gc-subway2 h1,  .provisional.gc-subway2-section .gc-subway2-h1 {
+.provisional.gc-subway2 h1,  .provisional.gc-subway-section .gc-subway-h1 {
 	background-color: #fff;
 	border-bottom-width: 0px;
 	color: #555;
@@ -246,10 +246,10 @@
     outline-width: revert;
 }
 /**** new added (styles for support content) */
-.gc-subway2-menu-nav + .gc-subway-support>ul, .gc-subway2-menu-nav + .gc-subway-support>ul li, .gc-subway2-menu-nav + .gc-subway-support>ul li a:before {
+.gc-subway-menu-nav + .gc-subway-support>ul, .gc-subway-menu-nav + .gc-subway-support>ul li, .gc-subway-menu-nav + .gc-subway-support>ul li a:before {
 	all:revert;
 }
-.gc-subway2-menu-nav + .gc-subway-support>ul {
+.gc-subway-menu-nav + .gc-subway-support>ul {
 	margin-block-start: 0;
 	margin-block-end: 11px;
 }
@@ -309,7 +309,7 @@
 .provisional.gc-subway2.no-blink {
 	display: block;
 }
-/**** delete (moved up level) .provisional.gc-subway2 .gc-subway2-menu-nav {
+/**** delete (moved up level) .provisional.gc-subway2 .gc-subway-menu-nav {
 	float: right;
 	width: 33.33%;
 } */
@@ -346,18 +346,18 @@ border-radius: 0;
 }
 	
 /**** update below	
-	.provisional.gc-subway2-section {
+	.provisional.gc-subway-section {
 			padding-right: 15px;
 			width: 66.66%; } */
-.provisional.gc-subway2-section {
+.provisional.gc-subway-section {
 	display: inline-block;
 	padding-right: 15px;
 	width: 66.66%;
 }
-.provisional.gc-subway2-section h1, .provisional.gc-subway2-section .gc-subway2-h1 {
+.provisional.gc-subway-section h1, .provisional.gc-subway-section .gc-subway-h1 {
 	margin-top: 0px;
 }
-.provisional.gc-subway2-section .gc-subway2-h1 {
+.provisional.gc-subway-section .gc-subway-h1 {
 	font-family: Lato, sans-serif;
 	font-weight: inherit;
 	margin-bottom: 0px;

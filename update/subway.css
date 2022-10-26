@@ -92,7 +92,8 @@
 	border-left: 4px solid transparent;
 	padding-bottom: 0;
 }
-/**** (delete dl li incorrect, moved ul li above)	.provisional.gc-subway2 ul li,
+/**** (delete dl li incorrect, moved ul li above)	
+.provisional.gc-subway2 ul li,
 			.provisional.gc-subway2 dl li {
 				border-left: 4px solid #26374a;
 				padding: 0px 20px 30px 1em; }
@@ -220,9 +221,19 @@
 }
 /**** new added noline class  ****/
 .provisional.gc-subway2 ul li ul.noline li {
-	 border-left: 5px solid transparent;
+	 border-left: 4px solid transparent;
 }
-.provisional.gc-subway2 ul li ul.noline li a.active::after {
+.provisional.gc-subway2 ul li:not(:last-child) ul.noline li a.active::after, .provisional.gc-subway2 ul li:last-child:has(ul.noline) li a.active::after {
+    content: " ";
+    height: 4px;
+    width: 1.6em;
+    background-color: #26374a;
+    position: absolute;
+    /* margin-left: -1em; */
+    margin-left: -2.8em;
+    margin-top: 0.5em;
+    left: 0;
+} {
 	content: " ";
 	height: 4px;
 	width: 1.6em;
@@ -313,21 +324,16 @@
 	width: 33.33%;
 } */
 	
-/**** change below (to have line if last child has ul)	
+
 .provisional.gc-subway2 ul li:last-child {
 	border-bottom: 0px;
 	border-left: 4px solid transparent;
-} */
-.provisional.gc-subway2 ul li:last-child {
-	border-bottom: 0px;
-
-} 	
+} 
 /**** added (to remove border-left for last child with no ul in desktop)	*/
-.provisional.gc-subway2 ul li:last-child:not(:has(ul)) {
-border-left: 4px solid transparent;
-}
-/**** added (to remove border-radius from last child in desktop) */	
+
+/**** added (to add border and remove border-radius from last child in desktop when there is a sub list) */	
 .provisional.gc-subway2 ul li:last-child:has(ul) {
+border-left: 4px solid #26374a;	
 border-radius: 0;
 }
 /**** added (to add end point to line) */
@@ -335,7 +341,6 @@ border-radius: 0;
     content: "";
     background-color: #26374a;
     border: 2px solid #26374a;
-    /* border-radius: 50%; */
     width: 0.7em;
     height: 0.7em;
     bottom: 0;

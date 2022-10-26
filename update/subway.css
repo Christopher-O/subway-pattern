@@ -80,8 +80,8 @@
 				border-left: 4px solid #26374a;
 				padding: 0px 20px 30px 1em; } */
 
-				
-.provisional.gc-subway2 ul li,  .provisional.gc-subway2 dl dd {
+/**** change below (to make sure border-left is not inherited to gc-subway-support) */				
+.provisional.gc-subway2 :not(.gc-subway-support) ul li,  .provisional.gc-subway2 dl dd {
 	border-left: 4px solid #26374a;
 	line-height: inherit;
 	margin-bottom: 0px;

@@ -233,17 +233,7 @@
     margin-left: -2.8em;
     margin-top: 0.5em;
     left: 0;
-} {
-	content: " ";
-	height: 4px;
-	width: 1.6em;
-	background-color: #26374a;
-	position: absolute;
-	/*margin-left: -1em;*/
-	margin-left: -2.8em;
-	margin-top: 0.5em;
-	left: 0;
-}
+} 
 .provisional.gc-subway2 ul li ul.noline>li>a {
 		position: relative;
 	}

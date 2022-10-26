@@ -19,7 +19,7 @@ var $document = wb.doc,
 		lg: "largeview",
 		xl: "xlargeview"
 	},
-	mainClass = "gc-subway-section",
+	mainClass = "gc-subway2-section",
 	toggleClass = "wb-inv",
 	desktopInited = false,
 	$html = wb.html,
@@ -93,9 +93,9 @@ var $document = wb.doc,
 			$h1Copy.prependTo( $main );
 			$h2.prependTo( $menu );
 			// added (delete and append support content under menu in desktop)
-			$('.gc-subway-support').insertAfter(".gc-subway-menu-nav");
+			$('.gc-subway-support').insertAfter(".gc-subway2-menu-nav");
 			//added (remove #wb-cont on desktop if previously was in mobile)
-			$('.gc-subway-menu-nav a').each(function(){
+			$('.gc-subway2-menu-nav a').each(function(){
    this.href = this.href.replace('#wb-cont', '');
  });
 			
@@ -106,10 +106,10 @@ var $document = wb.doc,
 			$h1Copy.remove();
 			
 			// added (append or reappend to bottom of content in mobile)
-				$('.gc-subway-support').appendTo(".gc-subway-section");
+				$('.gc-subway-support').appendTo(".gc-subway2-section");
 			 
 			//added (add anchor #wb-cont to nav href and remove other legacy anchors)
-			 $('.gc-subway-menu-nav a').attr('href', function (_, oldHref) {
+			 $('.gc-subway2-menu-nav a').attr('href', function (_, oldHref) {
         oldHref =  oldHref.replace(/\#(.*)/g, "#wb-cont");
          if(oldHref.indexOf('#') == -1)
             oldHref += "#wb-cont";
@@ -127,10 +127,10 @@ var $document = wb.doc,
 	 */
 	initDesktop = function( $elm ) {
 		$h2 = $( "<h2 class='h3 hidden-xs visible-md visible-lg mrgn-tp-0'>Sections</h2>" );
-		$h1Copy = $( "<div class='gc-subway-h1' aria-hidden='true'>" + $h1.text() + "</div>" );
-		$( "ul", $elm ).first().wrap( "<div class='gc-subway-menu-nav'></div>" );
-		$menu = $( ".gc-subway-menu-nav", $elm );
-		$elm.nextUntil( ".pagedetails, .gc-subway-section-end" ).wrapAll( "<section class='provisional " + mainClass + "'>" );
+		$h1Copy = $( "<div class='gc-subway2-h1' aria-hidden='true'>" + $h1.text() + "</div>" );
+		$( "ul", $elm ).first().wrap( "<div class='gc-subway2-menu-nav'></div>" );
+		$menu = $( ".gc-subway2-menu-nav", $elm );
+		$elm.nextUntil( ".pagedetails, .gc-subway2-section-end" ).wrapAll( "<section class='provisional " + mainClass + "'>" );
 		$main = $elm.next();
 
 		// Prevent on-load blinking on desktop

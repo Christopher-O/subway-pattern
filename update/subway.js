@@ -74,7 +74,7 @@ var $document = wb.doc,
 			$elm = $( selector );
 		}
 
-		// Ensure the page contains at least two heading level 1
+		// Ensure the page contains at least two heading level 1 (add class for main index page to keep 100% width)
 		if ( $( "main h1" ).length < 2 ) {
 			$document.off( wb.resizeEvents, onResize );
 			$elm.addClass( "no-blink p-0 gc-subway2-index" );

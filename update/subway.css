@@ -211,13 +211,15 @@
 	margin-top: -19px;
 	padding: 0px 20px 10px 0px;
 }
-/**** change below h1 ~ .provisional.gc-subway2 {
+/**** change below h1 ~ .provisional.gc-subway2 (to make sure index page is full width) {
 	border-right: none;
 	border-top: none;
 } */
-.provisional.gc-subway2:has(dl) {
+.provisional.gc-subway2:has(dl), .provisional.gc-subway2.gc-subway2-index {
     border-right: none;
     border-top: none;
+	float: none;
+	width: 100%;	
 }
 /**** new added noline class  ****/
 .provisional.gc-subway2 ul li ul.noline li {

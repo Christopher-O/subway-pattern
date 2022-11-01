@@ -109,11 +109,11 @@ var $document = wb.doc,
 				$('.gc-subway-support').appendTo(".gc-subway2-section");
 			 
 			//added (add anchor #wb-cont to nav href and remove other legacy anchors)
-			 $('.gc-subway2-menu-nav a').attr('href', function (_, oldHref) {
-        oldHref =  oldHref.replace(/\#(.*)/g, "#wb-cont");
-         if(oldHref.indexOf('#') == -1)
-            oldHref += "#wb-cont";
-        return oldHref;
+			 $('.gc-subway2-menu-nav a').attr('href', function (_, currHref) {
+        currHref =  currHref.replace(/\#(.*)/g, "#wb-cont");
+         if(currHref.indexOf('#') == -1)
+            currHref += "#wb-cont";
+        return currHref;
     });
 			
 			$( "h2:first-child", $menu ).remove();
